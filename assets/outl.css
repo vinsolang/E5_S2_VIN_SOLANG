@@ -1,78 +1,319 @@
-
-.card-artical{
-    height: 400px;
+/* Main Container Styles */
+.section-install {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.dropdown {
-    width: 70px;
-    transition: all 0.5s ease-in-out;
-  }
-  .dropdown {
-    position: relative;
-  }
 
-  .menu-button {
-    background-color: #000000;
-    color: white;
-    padding: 0;
-    width: 100%;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
+/* Breadcrumb Navigation */
+.link-mt {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
 
-  .dropdown-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #ffffff;
-    color: black;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    border-radius: 0 0 6px 6px;
-    z-index: 10;
-  }
+.link-mt a {
+  color: #4ca1af;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-  .dropdown-list.open {
-     /* or whatever max height fits your content */
-    max-height: 300px; 
-  }
+.link-mt a:hover {
+  text-decoration: underline;
+}
 
-  .dropdown-list a {
-    display: block;
-    padding: 12px;
-    color: #333;
-    text-decoration: none;
-  }
-  .dropdown-list a:hover {
-    background-color: #eee;
-  }
-  .menu-button>p{
-    display: none;
-  }
-  .dropdown:hover{
-    width: 200px;
-  }
-  .dropdown:hover>.menu-button{
-    background-color: #eee;
-  }
-  .dropdown:hover>.menu-button p{
-    display: block;
-  }
-  .icon-img{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.link-mt p {
+  margin: 0;
+  color: #666;
+}
 
-  }
-  .icon-img>img{
-    width: 50px;
+/* Main Content Header */
+.header-mt h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.header-mt h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  color: #2c3e50;
+}
+
+.header-mt p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Main Content Layout */
+.main-mt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.image-mt img {
+  max-width: 200px;
+  height: auto;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+.btn-down {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.btn {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-down nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn-down nav p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Installation Steps */
+.install-thunder {
+  margin: 3rem 0;
+}
+
+.install-thunder > p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.list-ins {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-ins p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.list-ins button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.list-ins button:hover {
+  background-color: #e0e0e0;
+}
+
+.list-ins img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Problems Section */
+.list-Problem {
+  margin: 4rem 0;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.list-Problem h4 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.p-problem {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 1.5rem 0;
+}
+
+.list-hav {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.list-link-hav {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.list-link-hav::before {
+  content: "•";
+  color: #4ca1af;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+}
+
+.list-link-hav a {
+  color: #4b6cb7;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.list-link-hav a:hover {
+  text-decoration: underline;
+  color: #2c3e50;
+}
+
+/* Volunteer Section */
+.volun-dis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+}
+
+.image-volun img {
+  max-width: 150px;
+  height: auto;
+}
+
+.volun-script h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.volun-script p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.volun-script a {
+  color: #4ca1af;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.volun-script a:hover {
+  text-decoration: underline;
+}
+
+/* Related Articles */
+.article-choose {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.card-artical {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-artical:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-artical span {
+  color: #4ca1af;
+}
+
+.card-artical p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-mt {
+    flex-direction: column;
+    text-align: center;
   }
   
+  .btn-down nav {
+    justify-content: center;
+  }
+  
+  .header-mt h1 {
+    font-size: 2rem;
+  text-align: center;
+  }
+  
+  .header-mt h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .volun-dis {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
-
+@media (max-width: 480px) {
+  .section-install {
+    padding: 1rem;
+  }
+  
+  .header-mt h1 {
+    font-size: 1.8rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .list-ins p {
+    font-size: 1rem;
+  }
+}
